@@ -91,7 +91,7 @@ def main():
     datalist=getData(baseurl)
     print '成功爬取到数据'
     #获取Mysql连接
-    db=MySQLdb.connect(user="root",passwd="134679852zk",host="127.0.0.1",db="data")
+    db=MySQLdb.connect(user="root",passwd="",host="127.0.0.1",db="data")
     saveToDatabase(datalist, db)
     print '导入数据库保存正常'
     savepath=u'movieTop250.xlsx'
